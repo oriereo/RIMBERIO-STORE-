@@ -3,7 +3,7 @@
             }
   /* ini Style headernya */
         header {
-            background-image: url("headerA.jpeg");
+            background-image: url("banner.jfif");
             background-repeat:no-repeat;
             background-position: center;
             background-size: cover;
@@ -172,4 +172,5 @@ nav ul ul li a:hover {
     .slider{
         height: 400px;
     }
+
 }
