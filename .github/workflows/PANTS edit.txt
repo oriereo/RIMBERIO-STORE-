@@ -1,0 +1,45 @@
+<html>
+<head>
+<title> @ FASHION SHOP </title>
+<link rel="stylesheet" href="layout2.css">
+</head>
+<body>
+
+<center><img src="bannerpants.jfif" width=100%></center>
+<MARQUEE BEHAVIOR="ALTERNATE" WIDTH="1000"><H3 ALIGN=CENTER STYLE="COLOR:BLACK;">
+<em> SHOP NOW </em></H3></MARQUEE>
+<HR>
+
+<nav>
+ <ul>
+        <li><a href="webfashion.html">HOME</a></li>
+	<li><a href="ABOUT.html">ABOUT US</a></li>
+    <li>
+	<a href="#">PRODUCTS</a>
+<ul>
+	<li><a href="shirts.html">Shirts</a></li>
+	<li><a href="outer.html">Outer</a></li>
+	<li><a href="dress.html">Dress</a></li>
+	<li><a href="pants.html">Pants</a></li>
+   </ul>
+   </1i>
+	<li><a href="SALE.html">SALE</a></li>
+	<li><a href="ORDER.html">ORDER</a></1i>
+	<li><a href="service.html">REVIEW</a></li>
+	<li><a href="kontak.html">SNS</a></li>
+<ul>
+	<li><a href="shirts.html">INSTAGRAM</a></li>
+	<li><a href="outer.html">TIKTOK</a></li>
+	<li><a href="dress.html">YOUTUBE</a></li>
+	<li><a href="pants.html">TWITTER</a></li>
+   </ul>
+    </li>
+	</nav>
+
+
+<center><table border="0" cellpadding="20" cellspacing="40">
+    <th><img src="pants1.JFIF" width="210">
+    <th><img src="pants2.JFIF" width="250">
+    <th><img src="pants3.JFIF" width="290">
+    <th><img src="pants1.JFIF" width="210">
+</th><html>
