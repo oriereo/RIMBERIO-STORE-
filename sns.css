@@ -28,7 +28,7 @@ body{ font-family: Avenir, Calibri, Arial, sans-serif; color:var(--text); backgr
   box-shadow: var(--shadow);
   background:
     linear-gradient(180deg, rgba(0,0,0,.35), rgba(0,0,0,.55)),
-    url('banner-sns.jpg') center/cover no-repeat; /* replace with your banner */
+    url('banner.jfif') center/cover no-repeat; 
 }
 .hero__inner{
   position:absolute; inset:0;
