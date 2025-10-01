@@ -29,19 +29,53 @@ RIMBERIO STORE</H1></MARQUEE>
 	<li><a href="review.html">REVIEW</a></li>
 	<li><a href="kontak.html">SNS</a></li>
 
-<P>     .    .</p>
-<p> <h3>Fill to Order</h3>
-<form action="submit_order.html" method="post">
-    Name: <input type="text" name="Name"><br><br>
-    Product:
-    <select name="produk">
-        <option>Shirt</option>
-        <option>Outer</option>
-        <option>Dress</option>
-        <option>Pants</option>
-    </select><br><br>
-    Code: <input type="text" name="Code"><br><br>
-    Quantity: <input type="number" name="Quantity" min="1"><br><br>
-    <input type="submit" value="Order Now">
+<form action="#" method="post">
 
+    <fieldset>
+      <legend><b>Fill to Order</b></legend>
 
+      <p>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </p>
+
+      <p>
+        <label for="product">Product:</label><br>
+        <select id="product" name="product" required>
+          <option value="">-- Select Product --</option>
+          <option value="shirts">Shirts</option>
+          <option value="outer">Outer</option>
+          <option value="dress">Dress</option>
+          <option value="pants">Pants</option>
+        </select>
+      </p>
+
+      <p>
+        <label for="code">Product Code:</label><br>
+        <input type="text" id="code" name="code" placeholder="e.g. SH123">
+      </p>
+
+      <p>
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
+      </p>
+
+      <p>
+        <label for="address">Shipping Address:</label><br>
+        <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your complete address" required></textarea>
+      </p>
+
+      <p>
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="e.g. 081234567890" required>
+      </p>
+
+      <p>
+        <button type="submit">🛒 Order Now</button>
+      </p>
+    </fieldset>
+    
+  </form>
+
+ </body>
+</html>
