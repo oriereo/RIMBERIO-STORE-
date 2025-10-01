@@ -109,8 +109,7 @@ footer {
 			font-size: 14px;
 			letter-spacing: 0.5px;
 			font-weight: 400;
-}
-
+        }
 /* Responsive */
 @media (max-width: 768px){
   .topnav{ gap:6px; }
