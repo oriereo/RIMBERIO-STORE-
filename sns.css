@@ -79,18 +79,6 @@ body{ font-family: Avenir, Calibri, Arial, sans-serif; color:var(--text); backgr
   font-weight:700;
   box-shadow: 0 8px 22px rgba(79,70,229,.25);
 }
-.sns-btn:hover{ filter:brightness(.95); }
-
-.sns-card.ig::before,
-.sns-card.tt::before,
-.sns-card.yt::before,
-.sns-card.tw::before,
-.sns-card.wa::before,
-.sns-card.mail::before{
-  content:""; position:absolute; inset:auto -20% -30% -20%; height:60%; z-index:0;
-  filter: blur(40px); opacity:.35; pointer-events:none;
-}
-.sns-card > *{ position:relative; z-index:1; }
 
  
 /* CTA */
