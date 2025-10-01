@@ -109,7 +109,7 @@ nav ul ul li a:hover {
             }
         }
        .slider{
-    width: 1300px;
+    width: max-content;
     max-width: 100vw;
     height: 700px;
     margin: auto;
@@ -177,3 +177,4 @@ nav ul ul li a:hover {
         height: 400px;
     }
 }
+
