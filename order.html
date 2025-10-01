@@ -29,53 +29,50 @@ RIMBERIO STORE</H1></MARQUEE>
 	<li><a href="review.html">REVIEW</a></li>
 	<li><a href="kontak.html">SNS</a></li>
 
-<form action="#" method="post">
+  <form action="#" method="post" style="max-width:400px; margin:auto;">
 
-    <fieldset>
-      <legend><b>Fill to Order</b></legend>
+    <p>
+      <input type="text" id="name" name="name" placeholder="Name" style="width:100%; padding:10px; margin:6px 0;" required>
+    </p>
 
-      <p>
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" placeholder="Enter your name" required>
-      </p>
+    <p>
+      <select id="product" name="product" style="width:100%; padding:10px; margin:6px 0;" required>
+        <option value="">-- Select Product --</option>
+        <option value="shirts">Shirts</option>
+        <option value="outer">Outer</option>
+        <option value="dress">Dress</option>
+        <option value="pants">Pants</option>
+      </select>
+    </p>
 
-      <p>
-        <label for="product">Product:</label><br>
-        <select id="product" name="product" required>
-          <option value="">-- Select Product --</option>
-          <option value="shirts">Shirts</option>
-          <option value="outer">Outer</option>
-          <option value="dress">Dress</option>
-          <option value="pants">Pants</option>
-        </select>
-      </p>
+    <p>
+      <input type="text" id="code" name="code" placeholder="Product Code (e.g. SH123)" style="width:100%; padding:10px; margin:6px 0;">
+    </p>
 
-      <p>
-        <label for="code">Product Code:</label><br>
-        <input type="text" id="code" name="code" placeholder="e.g. SH123">
-      </p>
+    <p>
+      <input type="number" id="quantity" name="quantity" min="1" max="20" value="1" placeholder="Quantity" style="width:100%; padding:10px; margin:6px 0;">
+    </p>
 
-      <p>
-        <label for="quantity">Quantity:</label><br>
-        <input type="number" id="quantity" name="quantity" min="1" max="20" value="1">
-      </p>
+    <p>
+      <textarea id="address" name="address" rows="3" placeholder="Shipping Address" style="width:100%; padding:10px; margin:6px 0;" required></textarea>
+    </p>
 
-      <p>
-        <label for="address">Shipping Address:</label><br>
-        <textarea id="address" name="address" rows="3" cols="30" placeholder="Enter your complete address" required></textarea>
-      </p>
+    <p>
+      <input type="tel" id="phone" name="phone" placeholder="Phone Number (e.g. 081234567890)" style="width:100%; padding:10px; margin:6px 0;" required>
+    </p>
 
-      <p>
-        <label for="phone">Phone Number:</label><br>
-        <input type="tel" id="phone" name="phone" placeholder="e.g. 081234567890" required>
-      </p>
+    <!-- Submit -->
+    <p style="text-align:center;">
+      <button type="submit" style="padding:10px 25px; background:#5A4BFF; color:white; border:none; border-radius:20px; cursor:pointer;">
+        🛒 Order Now
+      </button>
+    </p>
 
-      <p>
-        <button type="submit">🛒 Order Now</button>
-      </p>
-    </fieldset>
-    
   </form>
+
+</body>
+</html>
 
  </body>
 </html>
+
