@@ -1,25 +1,40 @@
-
+/* =======================
+   VARS & RESET
+======================= */
 :root{
+  --sidebar-width: 220px;
 
- sidebar-width: 220px;
+  --shop-card: #ffffff;
+  --shop-text: #1a1a1a;
+  --shop-muted:#6b7280;
+  --shop-primary:#4f46e5;
+  --shop-radius:16px;
+  --shop-shadow: 0 10px 30px rgba(0,0,0,.08);
 }
-
-
-body.has-sidebar .shop-wrap{
-  margin-left: var(--sidebar-width);
-}
-
 
 *{ box-sizing: border-box; }
-html,body{ margin:0; padding:0; }
-.shop-banner{
-  width:100%;
+html, body{ margin:0; padding:0; overflow-x:hidden; }
+body.has-sidebar .shop-wrap{ margin-left: var(--sidebar-width); }
+
+/* =======================
+   SLIDER / BANNER
+   (tetap overlap, slider di atas)
+======================= */
+.slider, .shop-banner{
+  position: relative;   /* supaya z-index berlaku */
+  z-index: 10;          /* LEBIH tinggi dari shop-wrap/card */
   display:block;
+  width:100%;
   height:auto;
-  margin:0 0 8px;
+  margin:0;             /* tidak menambah jarak */
 }
 
+/* Jika slider pakai wrapper lain (opsional) */
+.hero, .banner { position: relative; z-index: 10; }
 
+/* =======================
+   HEADING & WRAPPER
+======================= */
 .shop-heading{
   color:#666;
   font-family: Calibri, Arial, sans-serif;
@@ -29,54 +44,35 @@ html,body{ margin:0; padding:0; }
 
 .shop-wrap{
   max-width: 1100px;
-  margin: 40px auto 20px;
+  margin: 40px auto 20px;   /* biarkan setting awal */
   padding: 0 16px;
+  position: relative;
+  z-index: 1;               /* DI BAWAH slider */
   clear: both;
 }
+
+/* =======================
+   GRID & CARD
+======================= */
 .shop-grid{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 50px;
-  justify-content: stretch;  
+  justify-content: stretch;
   align-items: start;
-  min-width: 0;             
-}
-
-.shop-card{
-  width: 100%;
-  min-width: 0;     
-}
-
-.shop-media{
-  display:flex; align-items:center; justify-content:center;
-  min-height: 220px; margin: 6px 0 14px; background:#f6f6f6; border-radius:12px;
-}
-.shop-grid .shop-media img{
-  width: auto !important;
-  max-width: 220px !important;
-  height: auto;
-  object-fit: contain;
-  display: block;
-}
-
-html, body{ overflow-x: hidden; }
-
-:root{
-  --shop-card: #ffffff;
-  --shop-text: #1a1a1a;
-  --shop-muted:#6b7280;
-  --shop-primary:#4f46e5;
-  --shop-radius:16px;
-  --shop-shadow: 0 10px 30px rgba(0,0,0,.08);
+  min-width: 0;
 }
 
 .shop-card{
   position: relative;
+  width: 100%;
+  min-width: 0;
   background: var(--shop-card);
   border-radius: var(--shop-radius);
   box-shadow: var(--shop-shadow);
   padding: 20px;
   transition: transform .2s ease;
+  z-index: 1;                 /* biarkan lebih rendah dari slider */
 }
 .shop-card:hover{ transform: translateY(-4px); }
 
@@ -103,19 +99,17 @@ html, body{ overflow-x: hidden; }
   font-size: .9rem;
 }
 
-
+/* Media gambar di dalam card */
 .shop-media{
   display:flex; align-items:center; justify-content:center;
-  min-height: 220px;            /* tinggi konsisten */
+  min-height: 220px;
   margin: 6px 0 14px;
-  background: #f6f6f6;          /* sedikit kontras */
-  border-radius: 12px;
+  background:#f6f6f6;
+  border-radius:12px;
 }
-
-
 .shop-grid .shop-media img{
-  width: auto !important;       /* lawan aturan global */
-  max-width: 220px !important;  /* batas lebar gambar */
+  width: auto !important;
+  max-width: 220px !important;
   height: auto;
   object-fit: contain;
   display: block;
@@ -126,7 +120,6 @@ html, body{ overflow-x: hidden; }
 }
 .shop-price{ color:var(--shop-muted); font-size:.92rem; }
 .shop-price strong{ color:var(--shop-text); }
-
 
 .shop-btn{
   appearance:none;
@@ -141,7 +134,9 @@ html, body{ overflow-x: hidden; }
 .shop-btn:hover{ transform: translateY(-1px); }
 .shop-btn:active{ transform: translateY(0); filter: brightness(.95); }
 
-
+/* =======================
+   DARK MODE
+======================= */
 @media (prefers-color-scheme: dark){
   :root{ --shop-card:#0f1113; --shop-text:#f3f4f6; --shop-muted:#a1a1aa; }
   .shop-media{ background:#15181c; }
