@@ -81,7 +81,6 @@ body{ font-family: Avenir, Calibri, Arial, sans-serif; color:var(--text); backgr
 }
 .sns-btn:hover{ filter:brightness(.95); }
 
-/* Soft color glows per platform (optional) */
 .sns-card.ig::before,
 .sns-card.tt::before,
 .sns-card.yt::before,
@@ -93,13 +92,7 @@ body{ font-family: Avenir, Calibri, Arial, sans-serif; color:var(--text); backgr
 }
 .sns-card > *{ position:relative; z-index:1; }
 
-.sns-card.ig::before{ background: radial-gradient(600px 200px at 50% 100%, #f58529, #dd2a7b, #8134af); }
-.sns-card.tt::before{ background: radial-gradient(600px 200px at 40% 100%, #000, #69C9D0, #EE1D52); }
-.sns-card.yt::before{ background: radial-gradient(600px 200px at 60% 100%, #ff0000, #ff6a6a); }
-.sns-card.tw::before{ background: radial-gradient(600px 200px at 60% 100%, #1d9bf0, #60b8ff); }
-.sns-card.wa::before{ background: radial-gradient(600px 200px at 60% 100%, #25D366, #9BE7B1); }
-.sns-card.mail::before{ background: radial-gradient(600px 200px at 60% 100%, #7c3aed, #a78bfa); }
-
+ 
 /* CTA */
 .cta{
   margin-top: 28px;
