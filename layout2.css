@@ -1,7 +1,6 @@
 head {
             box-sizing: border-box;
             }
-  /* ini Style headernya */
         header {
             background-image: url("banner.jfif");
             background-repeat:no-repeat;
@@ -108,13 +107,12 @@ nav ul ul li a:hover {
                 height: auto;
             }
         }
-       .slider{
-    width: max-content;
-    max-width: 100vw;
-    height: 700px;
-    margin: auto;
-    position: relative;
-    overflow: hidden;
+    .slider {
+  width: 100vw;       
+  height: 400px;      
+  overflow: hidden;    
+  margin: 0;         
+  padding: 0;
 }
 .slider .list{
     position: absolute;
@@ -234,4 +232,5 @@ nav ul ul li a:hover {
   color: #000;
   font-weight: bold;
 }
+
 
