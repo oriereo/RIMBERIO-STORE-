@@ -356,3 +356,111 @@ footer {
   .hero{ box-shadow:none; }
 }
 
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+/* Intro Section */
+.intro {
+  text-align: center;
+  max-width: 900px;
+  margin: 40px auto;
+  line-height: 1.6;
+}
+
+/* Featured Collection */
+.featured {
+  text-align: center;
+  padding: 60px 20px;
+  background: #fff;
+}
+
+.featured h2 {
+  font-size: 24px;
+  margin-bottom: 30px;
+  color: #111;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  transition: 0.5s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+  filter: brightness(70%);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 12px 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0;
+  transition: 0.4s ease;
+}
+
+.card:hover .overlay {
+  opacity: 1;
+}
+
+/* Lookbook Carousel */
+.lookbook {
+  text-align: center;
+  padding: 60px 0;
+}
+
+.lookbook h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+.carousel {
+  overflow: hidden;
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+.slides {
+  display: flex;
+  width: 300%;
+  animation: slide 12s infinite;
+}
+
+.slides img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0); }
+}
