@@ -11,6 +11,54 @@ head {
         body {
             font-family: AVENIR, TH SARABUN NEW;
         }
+
+.banner-text {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  color: white;
+  text-shadow: 0 3px 6px rgba(0,0,0,0.4);
+}
+
+.banner-text h2 {
+  font-size: 42px;
+  margin: 0;
+  font-weight: 600;
+}
+
+.banner-text p {
+  margin-top: 8px;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+/* Moving "Shop Now" Section */
+.shopnow-container {
+  width: 100%;
+  overflow: hidden;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 0;
+}
+
+.shopnow-text {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 22px;
+  font-style: italic;
+  color: #000;
+  font-weight: 600;
+  animation: moveText 5s linear infinite alternate;
+}
+
+@keyframes moveText {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(100% - 150px)); }
+}
+
  nav {
 	background-color:#545659; 
 	height:50px; 
@@ -464,3 +512,4 @@ body {
   66% { transform: translateX(-200%); }
   100% { transform: translateX(0); }
 }
+
