@@ -106,9 +106,3 @@ body{ font-family: Avenir, Calibri, Arial, sans-serif; color:var(--text); backgr
 @media (max-width: 768px){
   .topnav{ gap:6px; }
   .topnav a{ padding:8px 10px; }
-}
-@media (prefers-color-scheme: dark){
-  :root{ --bg:#0f1113; --text:#f3f4f6; --muted:#a1a1aa; }
-  .sns-card{ background:#121418; }
-  .hero{ box-shadow:none; }
-}
